@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Serilog" Version="3.0.1" />
+		<PackageReference Include="Serilog.Enrichers.Context" Version="4.6.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Serilog.Sinks.RichTextBox.WinForms\Serilog.Sinks.CustomRichTextBox.csproj" />
+	</ItemGroup>
+
+</Project>
